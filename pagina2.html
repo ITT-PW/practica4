@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <select name="datos" onchange="val()" class="text-sexo" id="sexo">
+        <option value="">Selecciona tu Sexo</option>
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+    </select>
+    <input type="text" id="res" value="" class="">
+    <script src="js/script.js"></script>
+    <script>
+        function val() {
+          var sel=document.getElementById('sexo').value;
+          var inp=document.getElementById('res');
+
+          if(sel=="F"){
+            inp.className="inpp";
+          }
+          if(sel=="M"){
+            inp.className="inf";
+          }
+          setTimeout(function(){location.reload();},5000);
+        };
+        
+    </script>
+</body>
+</html>
