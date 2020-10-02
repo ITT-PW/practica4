@@ -1,0 +1,14 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.textx{
+    left: 100px;
+    top: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    position: absolute;
+    animation:animX 2.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

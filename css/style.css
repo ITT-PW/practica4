@@ -1,0 +1,46 @@
+/* papper Curl */
+div{
+
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+.paper1{
+    margin: 300px auto;
+    background: radial-gradient(circle,white,#00ABF5); 
+   
+}
+.paper1::before,.paper1::after{
+    position: absolute;
+    width: 45%;
+    height: 10px;
+    left: 10px;
+    bottom: 12px;
+    content: "";
+    box-shadow: 5px 6px 15px black;
+    transform: skew(-5deg) rotate(-3deg);
+    z-index: -1;
+}
+.paper1::after{
+    left: auto;
+    right: 3px;
+    transform: skew(5deg) rotate(3deg);
+}
+.paper2::before,.paper2::after{
+    position: absolute;
+    width: 1.5%;
+    height: 50%;
+    top: 10px;
+    right: 6px;
+    content: "";
+    box-shadow: 5px 6px 16px gray;
+    transform: skew(-8deg) rotate(-6deg);
+    z-index: -1;
+
+}
+
+.paper2::after{
+    top: auto;
+    bottom: 3px;
+    transform: skew(8deg) rotate(6deg);
+}
